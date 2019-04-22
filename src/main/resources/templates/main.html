@@ -18,7 +18,7 @@ p {line-height: 2}
   background-size: cover;
 }
 
-.bgimg {background-image: url("img/wedding_1.jpeg")}
+.bgimg {background-image: url("img/wedding_01.jpeg")}
 .bgimg2 {background-image: url("https://www.w3schools.com/w3images/flowers.jpg")}
 
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -29,7 +29,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-  <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+  <span class="w3-button w3-black w3-xlarge w3-display-topright" style="color:#ff6f00;">X</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption"></p>
@@ -39,19 +39,19 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">세진 & 태준</h1>
-    <h2>결혼합니다.</h2>
-    <h2><b>2019.06.22</b></h2>
+    <h1 class="w3-jumbo" style="color:#e1bee7";>세진 & 태준</h1>
+    <h2 style="color:#e1bee7";>결혼합니다.</h2>
+    <h2 style="color:#e1bee7";><b>2019.06.22</b></h2>
   </div>
 </header>
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">처음으로</a>
     <a href="#us" style="width:25%" class="w3-bar-item w3-button">세진 & 태준</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">일시/장소 </a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">연락하기</a>
   </div>
 </div>
 
@@ -59,9 +59,13 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>세진 & 태준</b></h1>
-    <img class="w3-round w3-grayscale-min" src="https://www.w3schools.com/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
-    <p><i>갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩
-    갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩갈매기가 끼룩끼룩</i>
+    <img class="w3-round w3-grayscale-min" src="img/wedding_2.jpeg" style="width:100%;margin:32px 0">
+    <p style="width:100%" align="center"><i>두 사람이 사랑으로 만나 진실과 이해로써</i> <br/>
+		<i>하나를 이루려고 합니다.</i><br/>
+		<i>이 두 사람을 지성으로 아끼고 돌봐주신</i><br/> 
+		<i>여러 어른과 친지를 모시고 서약을 맺고자 하오니</i><br/>
+		<i>바쁘신 가운데 두 사람의 장래를 가까이에서</i> <br/>
+		<i>축복해 주시면 고맙겠습니다.</i><br/>
     </p><br>
     <!-- <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p> -->
   </div>
@@ -79,7 +83,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="https://www.w3schools.com/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
     <div class="w3-row">
       <div class="w3-half">
         <h2>일시</h2>
@@ -92,43 +95,47 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <p>그랜드컨벤션 웨딩홀 3층</p>
       </div>
     </div>
+    
+    <img class="w3-round-large w3-grayscale-min" src="img/img_map_01.jpg" style="width:100%;margin:64px 0">
+    
+    <h1 class="w3-text-grey"><b>부산에서 버스 대절 예정입니다. 장소와 시간이 정해지면 등록하겠습니다. 문의가 있으시면 신랑측으로 연락주세요.</b></h1>
   </div>
 </div>
 
-<!-- RSVP section -->
+<!--전화걸기 section -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
   <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">신부측에 연락하기</button>
+    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">신부측에 연락하기</button>
   </p>
   <p class="w3-xlarge">
   <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-on" style="padding:8px 60px">신랑측에 연락하기</button>
   </p>
 </div>
 
-<!--연락 modal -->
+<!--신랑 연락 modal -->
 <div id="id01" class="w3-modal">
   	<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px;">
 	    <div>
 	    	<p>신랑</p>
 	    	<div class="w3-bar w3-border">
-		      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
-		      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		      <a href="tel:010-9316-2073" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-9316-2073" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
 		    </div>
 		</div>
 	
 		<div>
 		    <p>아버지 김통호</p>
 		    <div class="w3-bar w3-border">
-		      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
-		      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		      <a href="tel:010-8541-6172" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-8541-6172" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
 		    </div>
 		</div>
 	
 		<div>
 		    <p>어머니 서영자</p>
 		    <div class="w3-bar w3-border">
-		      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
-		      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		      <a href="tel:010-3893-6024" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-3893-6024" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
 		    </div>
 		</div>
 		<br/>
@@ -140,38 +147,74 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	</div>
 </div>
 
+<!--신부 연락 modal -->
+<div id="id02" class="w3-modal">
+  	<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px;">
+	    <div>
+	    	<p>신부</p>
+	    	<div class="w3-bar w3-border">
+		      <a href="tel:010-2787-7170" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-2787-7170" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		    </div>
+		</div>
+	
+		<div>
+		    <p>아버지 김인호</p>
+		    <div class="w3-bar w3-border">
+		      <a href="tel:010-9041-7371" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-9041-7371" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		    </div>
+		</div>
+	
+		<div>
+		    <p>어머니 김성미 </p>
+		    <div class="w3-bar w3-border">
+		      <a href="tel:010-2981-7170" class="w3-bar-item w3-button"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>전화하기</a>
+		      <a href="sms:010-2981-7170" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>문자하기</a>
+		    </div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="w3-bar w3-border">
+			<button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-green">닫기</button>
+		</div>
+	</div>
+</div>
+
 <header class="w3-center w3-margin-bottom">
-  <h1><b>PHOTOLIO</b></h1>
-  <p><b>A template made by w3.css for photographers.</b></p>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+  <h1><b>웨딩 사진</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">여백주기</button></p>
 </header>  
 <!-- Photo Grid -->
 <div class="w3-row" id="myGrid" style="margin-bottom:128px">
   <div class="w3-third">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-    <img src="https://www.w3schools.com/w3images/sound.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/woods.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rock.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+    <img src="img/wedding_3.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_4.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_5.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_6.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_7.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_8.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_15.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_22.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   </div>
 
   <div class="w3-third">
-    <img src="https://www.w3schools.com/w3images/coffee.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/bridge.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/notebook.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/london.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/avatar_g.jpg" style="width:100%">
+    <img src="img/wedding_9.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_10.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_11.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_12.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_13.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_14.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   </div>
 
   <div class="w3-third">
-    <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/workbench.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/gondol.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/skies.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/workshop.jpg" style="width:100%">
+    <img src="img/wedding_16.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_17.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_18.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_19.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_20.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_21.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   </div>
 </div>
 
