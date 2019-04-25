@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>세진 & 태준 결혼합니다.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script> 
+
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg {background-image: url("img/wedding_01.jpeg")}
+.bgimg2 {background-image: url("https://www.w3schools.com/w3images/flowers.jpg")}
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xlarge w3-display-topright" style="color:#ff6f00;">X</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
+
+<header class="w3-center w3-margin-bottom">
+  <h1><b>웨딩 사진</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="setPadding()">여백주기</button></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="goMain()">메인으로 이동</button></p> 
+</header>  
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="img/wedding_3.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_4.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_5.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_6.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_7.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_8.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_15.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_22.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  </div>
+
+  <div class="w3-third">
+    <img src="img/wedding_9.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_10.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_11.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_12.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_13.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_14.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  </div>
+
+  <div class="w3-third">
+    <img src="img/wedding_16.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_17.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_18.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_19.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_20.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+    <img src="img/wedding_21.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  </div>
+</div>
+
+<!-- End Page Content -->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>감사합니다.</p>
+
+  <input type="text" style="width:700px;" value="http://54.180.109.122:8082/main" id="myInput">
+  <button class="w3-button w3-black" onclick="copyUrl()">주소 복사하기</button>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+	
+<script>
+//url copy
+function copyUrl() {
+	  /* Get the text field */
+	  var copyText = document.getElementById("myInput");
+	  /* Select the text field */
+	  copyText.select();
+	  /* Copy the text inside the text field */
+	  document.execCommand("copy");
+	  /* Alert the copied text */
+	  alert("복사되었습니다 : " + copyText.value);
+}
+
+// Toggle grid padding
+function setPadding() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+//Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+//메인화면으로 이동
+function goMain()
+{
+	location.href="/main";
+}
+</script>
+</body>
+</html>

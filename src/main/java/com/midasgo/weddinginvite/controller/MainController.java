@@ -31,4 +31,13 @@ public class MainController
 		mav.setViewName("main");
 		return mav;
     } 
+    //-----------------------------------------------------------------------------
+    //
+    @RequestMapping(value = "/photos")
+    public ModelAndView photos(Model model, HttpServletRequest request, HttpServletResponse response) 
+    {	    	
+    	ModelAndView mav = new ModelAndView();
+		mav.setViewName("photos");
+		return mav;
+    }
 }
