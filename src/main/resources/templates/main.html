@@ -27,6 +27,16 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <body>
 
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xlarge w3-display-topright" style="color:#ff6f00;">X</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
+
+
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
@@ -55,8 +65,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		<i>이제 부부라는 이름으로</i><br/>
 		<i>인생의 앞날을 함께 채워가고자 합니다.</i><br/> 
 		<br/>
-		<i>둘이 되어 시작하는 삶의 첫 장,</i>
-		<i>귀한 걸음으로 축복해주시면</i>
+		<i>둘이 되어 시작하는 삶의 첫 장,</i><br/>
+		<i>귀한 걸음으로 축복해주시면</i><br/>
 		<i>마음에 정히 새기고 살아가겠습니다.</i>
 		<br/>
     </p><br>
@@ -67,7 +77,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">초대합니다.</h1><br>
+    <h1 class="w3-xxlarge">초대합니다.</h1><br>
     <h2></h2>
   </div>
 </div>
@@ -191,28 +201,28 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </header>  
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="img/wedding_3.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_4.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_5.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_6.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_7.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_8.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_15.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_22.jpeg" style="width:100%">
+  <img class="mySlides" src="img/wedding_3.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_4.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_5.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_6.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_7.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_8.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_15.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_22.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
-  <img class="mySlides" src="img/wedding_9.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_10.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_11.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_12.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_13.jpeg" style="width:100%">  
-  <img class="mySlides" src="img/wedding_14.jpeg" style="width:100%">
+  <img class="mySlides" src="img/wedding_9.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_10.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_11.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_12.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_13.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">  
+  <img class="mySlides" src="img/wedding_14.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
-  <img class="mySlides" src="img/wedding_16.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_17.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_18.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_19.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_20.jpeg" style="width:100%">
-  <img class="mySlides" src="img/wedding_21.jpeg" style="width:100%">
+  <img class="mySlides" src="img/wedding_16.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_17.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_18.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_19.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_20.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedding_21.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -264,6 +274,14 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+
+//Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
 </script>
 </body>
