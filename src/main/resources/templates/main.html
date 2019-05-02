@@ -12,14 +12,19 @@
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 p {line-height: 2}
-.bgimg, .bgimg2 {
-  min-height: 100%;
+hr { background-color: red; height: 1px; border: 0; }
+.topimg {
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
-
-.bgimg {background-image: url("img/wedding_01.jpeg")}
-.bgimg2 {background-image: url("https://www.w3schools.com/w3images/flowers.jpg")}
+.flowerimg {
+  height: 30%;
+  background-position: center;
+  background-size: cover;
+}
+.topimg {background-image: url("img/wed_top.jpg")}
+.flowerimg {background-image: url("https://www.w3schools.com/w3images/flowers.jpg")}
 
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
@@ -36,9 +41,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 </div>
 
-
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+<header class="w3-display-container w3-wide topimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-xlarge" style="color:#ab47bc; margin-bottom:0px;";>세진 & 태준</h1>
     <h2 class="w3-medium" style="color:#ab47bc; margin-bottom:0px;";>결혼합니다.</h2>
@@ -60,7 +64,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>세진 & 태준</b></h1>
-    <img class="w3-round w3-grayscale-min" src="img/wedding_2.jpeg" style="width:100%;margin:32px 0">
+    <img class="w3-round w3-grayscale-min" src="img/wed_middle.jpeg" style="width:100%;margin:32px 0">
     <p style="width:100%" align="center"><i>짝이 되는 사람을 만났습니다.</i> <br/>
 		<i>이제 부부라는 이름으로</i><br/>
 		<i>인생의 앞날을 함께 채워가고자 합니다.</i><br/> 
@@ -75,7 +79,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 <!-- Background photo -->
-<div class="w3-display-container bgimg2">
+<div class="w3-display-container flowerimg">
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-xxlarge">초대합니다.</h1><br>
     <h2></h2>
@@ -95,10 +99,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-half">
         <h2>웨딩 장소</h2>
         <p>서울특별시 영등포구 당산동</p>
-        <p>그랜드컨벤션 웨딩홀 3층</p>
+        <p>그랜드컨벤션 웨딩홀 3층 그랜드홀</p>
       </div>
     </div>
     <img class="w3-round-large w3-grayscale-min" src="img/img_map_01.jpg" style="width:100%;margin:64px 0">
+    <hr>
     <div class="w3-row">
       <div class="w3-half">
         <h2>버스 대절 출발일자</h2>
@@ -201,28 +206,45 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </header>  
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="img/wedding_3.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_4.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_5.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_6.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_7.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_8.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_15.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_22.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_13.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_14.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_15.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_16.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_17.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">  
+  <img class="mySlides" src="img/wed_18.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_19.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_20.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_21.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_22.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_23.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_24.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
-  <img class="mySlides" src="img/wedding_9.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_10.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_11.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_12.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_13.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">  
-  <img class="mySlides" src="img/wedding_14.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_1.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_2.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_3.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_4.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_5.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_6.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_7.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_8.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_9.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_10.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_11.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_12.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
-  <img class="mySlides" src="img/wedding_16.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_17.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_18.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_19.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_20.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedding_21.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_25.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_26.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_27.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_28.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_29.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_30.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_31.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_32.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_33.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_34.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_35.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_36.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wed_37.jpeg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -230,11 +252,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- End Page Content -->
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>감사합니다.</p>
-
+<footer class="w3-center w3-pale-red">
+    <h1 class="w3-text-grey w3-xlarge"><b>감사합니다.</b></h1>
+	<!-- 
   <input type="text" style="width:40%;" value="http://54.180.109.122:8082/main" id="myInput">
   <button class="w3-button w3-black" onclick="copyUrl()">주소 복사하기</button>
+   -->
 </footer>
 <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 	
