@@ -199,10 +199,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	</div>
 </div>
 
-<header class="w3-center w3-margin-bottom">
-  <h1><b>웨딩 사진</b></h1>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="photoMoreView()">여러장 보기</button></p>
-</header>  
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>웨딩 사진</b></h1>
+    <button onclick="photoMoreView()" type="button" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-on" style="padding:8px 60px">여러장 보기</button>
+   </div>
+</div>
 
 <div class="w3-content w3-display-container">
   <img class="mySlides" src="img/wedd_13.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
@@ -210,12 +212,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <img class="mySlides" src="img/wedd_15.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_16.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_17.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">  
-  <img class="mySlides" src="img/wedd_18.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_19.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedd_20.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_21.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_22.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_23.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedd_27.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
   <img class="mySlides" src="img/wedd_1.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_2.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
@@ -223,7 +224,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <img class="mySlides" src="img/wedd_4.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_5.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_6.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedd_7.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_8.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_9.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_10.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
@@ -231,8 +231,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <img class="mySlides" src="img/wedd_12.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   
   <img class="mySlides" src="img/wedd_25.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedd_26.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
-  <img class="mySlides" src="img/wedd_27.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
+  <img class="mySlides" src="img/wedd_26.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">  
   <img class="mySlides" src="img/wedd_28.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_29.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_30.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
@@ -252,8 +251,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <footer class="w3-center w3-pale-red">
     <h1 class="w3-text-grey w3-xlarge"><b>감사합니다.</b></h1>
 	<!-- 
-  <input type="text" style="width:40%;" value="http://54.180.109.122:8082/main" id="myInput">
-  <button class="w3-button w3-black" onclick="copyUrl()">주소 복사하기</button>
+	  <input type="text" style="width:40%;" value="http://54.180.109.122:8082/main" id="myInput">
+	  <button class="w3-button w3-black" onclick="copyUrl()">주소 복사하기</button>
    -->
 </footer> 
 <div class="w3-hide-small" style="margin-bottom:32px"></div>
