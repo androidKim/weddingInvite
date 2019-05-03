@@ -27,7 +27,13 @@ public class MainController
     @RequestMapping(value = "/main")
     public ModelAndView main(Model model, HttpServletRequest request, HttpServletResponse response) 
     {	    	
+    	String funYn = ""; 
+    	funYn = request.getParameter("funYn");
+    	if(funYn == null)
+    		funYn = "N";
+    	
     	ModelAndView mav = new ModelAndView();
+    	mav.addObject("funYn", funYn);
 		mav.setViewName("main");
 		return mav;
     } 
