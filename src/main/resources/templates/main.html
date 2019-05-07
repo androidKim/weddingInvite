@@ -31,7 +31,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img:hover{opacity: 1}
 </style>
 <body>
-
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
   <span class="w3-button w3-black w3-xlarge w3-display-topright" style="color:#ff6f00;">X</span>
@@ -66,7 +65,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h1 class="w3-center w3-text-grey"><b>세진 & 태준</b></h1>
     <img class="w3-round w3-grayscale-min" src="img/wed_middle.jpeg" style="width:100%;margin:32px 0">
     
-    <th:block th:switch="${funYn}">
+    <th:block th:switch="${invite}">
 		<div th:case="Y">		
 			<p style="width:100%" align="center">
 			<i>끼룩끼룩</i><br/> 
@@ -76,7 +75,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			<i>과자가 모두 떨어지면 그것들은 떠나버린다.</i><br/>
 			<br/>
 			<i>그러나 새우과자가 없어도 다가오는 한사람이 있다.</i><br/>
-			<br/>
 			<i>- 태준의 시 끼룩끼룩 중 -</i> <br/>
 			<br/>
 			<br/>
@@ -225,7 +223,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>웨딩 사진 & 동영상</b></h1>
     <p class="w3-xlarge">
-  	<button onclick="photoMoreView()" type="button" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-on" style="padding:8px 60px">여러장 보기</button>
+  	<button onclick="photoMoreView()" type="button" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-on w3-large" style="padding:2px 15px">여러장 보기</button>
   	</p>
    </div>
 </div>
@@ -263,8 +261,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <img class="mySlides" src="img/wedd_33.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_34.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
   <img class="mySlides" src="img/wedd_24.jpg" style="width:100%" onclick="onClick(this)" alt="우리 웨딩 사진">
- 
-
   <button class="w3-button w3-gray w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-gray w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>

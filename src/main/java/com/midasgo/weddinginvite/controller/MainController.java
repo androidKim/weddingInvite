@@ -28,13 +28,13 @@ public class MainController
     @RequestMapping(value = "/main")
     public ModelAndView main(Model model, HttpServletRequest request, HttpServletResponse response) 
     {	    	
-    	String funYn = ""; 
-    	funYn = request.getParameter("funYn");
-    	if(funYn == null)
-    		funYn = "N";
+    	String invite = ""; 
+    	invite = request.getParameter("invite");
+    	if(invite == null)
+    		invite = "N";
     	
     	ModelAndView mav = new ModelAndView();
-    	mav.addObject("funYn", funYn);
+    	mav.addObject("invite", invite);
 		mav.setViewName("main");
 		return mav;
     } 
